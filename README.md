@@ -1,4 +1,3 @@
-
 # Lab 4: Registration, Login and JWT
 
 **Name:** V. Jaya Adithya  
@@ -7,11 +6,13 @@
 **Section:** 211 & S-16
 
 ## Project Description
+
 This project implements user registration and login using Node.js, Express, SQLite, bcrypt and JSON Web Tokens (JWT).
 
 Passwords are hashed using bcrypt before being stored in the database. Successful login generates a JWT token.
 
 ## Technologies Used
+
 - Node.js
 - Express.js
 - SQLite
@@ -29,10 +30,14 @@ npm install
 Start the server:
 
 ```bash
-node server.js
+npm start
 ```
 
-Server URL: http://localhost:3000
+Local Server URL: http://localhost:3000
+
+## Live Deployment
+
+**Render URL:** https://bdf-lab-04-registration-login-jwt.onrender.com
 
 ## API Endpoints
 
@@ -63,11 +68,10 @@ Server URL: http://localhost:3000
 ![Unknown User](screenshots/06-unknown-user.png)
 
 ## Notes
+
 - Passwords are stored as bcrypt hashes.
 - Duplicate usernames are rejected.
 - Incorrect login credentials are rejected.
 - JWT tokens are generated after successful authentication.
 - API endpoints were tested using PowerShell.
-
-## Deployment
-Not deployed yet.
+- The project is deployed using Render.
