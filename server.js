@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const db = require('./database');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const JWT_SECRET = 'my_lab4_secret_key';
 
 app.use(express.json());
